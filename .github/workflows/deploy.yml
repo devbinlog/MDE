@@ -10,15 +10,50 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Validate docs structure
         run: |
-          for f in docs/00_project_overview.md docs/01_requirements.md docs/02_architecture.md docs/03_data_model.md docs/04_llm_design.md docs/05_api_spec.md docs/06_system_flow.md docs/07_evaluation.md docs/08_ai_service.md docs/09_deployment.md docs/10_operational_strategy.md; do
-            [ -f "$f" ] && echo "OK: $f" || echo "MISSING: $f" && exit 1
+          MISSING=0
+          for f in \
+            docs/00_project_overview.md \
+            docs/01_requirements.md \
+            docs/02_architecture.md \
+            docs/03_data_model.md \
+            docs/04_llm_design.md \
+            docs/05_api_spec.md \
+            docs/06_system_flow.md \
+            docs/07_evaluation.md \
+            docs/08_ai_service.md \
+            docs/09_deployment.md \
+            docs/10_operational_strategy.md; do
+            if [ -f "$f" ]; then
+              echo "OK: $f"
+            else
+              echo "MISSING: $f"
+              MISSING=1
+            fi
           done
+          [ $MISSING -eq 0 ] || exit 1
+
       - name: Validate agents structure
         run: |
-          for f in agents/product_agent.md agents/frontend_agent.md agents/backend_agent.md agents/ai_agent.md agents/data_agent.md agents/infra_agent.md agents/design_agent.md; do
-            [ -f "$f" ] && echo "OK: $f" || echo "MISSING: $f" && exit 1
+          MISSING=0
+          for f in \
+            agents/product_agent.md \
+            agents/frontend_agent.md \
+            agents/backend_agent.md \
+            agents/ai_agent.md \
+            agents/data_agent.md \
+            agents/infra_agent.md \
+            agents/design_agent.md; do
+            if [ -f "$f" ]; then
+              echo "OK: $f"
+            else
+              echo "MISSING: $f"
+              MISSING=1
+            fi
           done
+          [ $MISSING -eq 0 ] || exit 1
+
       - name: Check README exists
         run: test -f README.md && echo "README OK"

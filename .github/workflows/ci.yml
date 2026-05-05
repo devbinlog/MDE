@@ -20,13 +20,21 @@ jobs:
           python-version: '3.11'
           cache: pip
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt pytest pytest-asyncio httpx
       - name: Run tests
         run: python -m pytest tests/ -v --tb=short
         env:
           APP_ENV: test
           DATABASE_URL: sqlite+aiosqlite:///./test.db
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          JWT_SECRET: test_secret_for_ci
+          JWT_ALGORITHM: HS256
+          JWT_EXPIRE_DAYS: "1"
+          ADMIN_EMAIL: admin@mde.dev
+          ADMIN_PASSWORD: test_admin
+          LLM_PROVIDER: gemini
+          LLM_MODEL: gemini-2.0-flash
+          LLM_API_KEY: test_key_not_used_in_unit_tests
+          FRONTEND_URL: http://localhost:3000
 
   ai-service:
     name: AI Service Schema Tests

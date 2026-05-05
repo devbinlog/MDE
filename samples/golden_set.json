@@ -1,0 +1,51 @@
+{
+  "description": "각 테스트 케이스에서 LLM 출력이 반드시 포함해야 하는 핵심 속성 정의. 평가 시 실제 출력과 비교.",
+  "cases": {
+    "rainy_night": {
+      "input": "새벽 3시, 비 오는 날, 혼자 운전하는 느낌",
+      "required": {
+        "emotion": ["melancholic", "lonely"],
+        "energy": "low",
+        "tempo_feel": "slow",
+        "genre_contains": ["indie", "pop", "dream"],
+        "atmosphere_contains": ["rainy", "night"]
+      },
+      "forbidden": {
+        "energy": ["high"],
+        "tempo_feel": ["fast"]
+      }
+    },
+    "punk_live": {
+      "input": "지하 클럽, 땀냄새, 기타 피드백, 관중의 함성, 날 것의 에너지",
+      "required": {
+        "emotion": ["raw", "intense"],
+        "energy": "high",
+        "tempo_feel": "fast",
+        "genre_contains": ["punk", "rock"],
+        "atmosphere_contains": ["underground", "live"]
+      },
+      "forbidden": {
+        "energy": ["low"],
+        "tempo_feel": ["slow"]
+      }
+    },
+    "space_ambient": {
+      "input": "끝없이 펼쳐진 우주, 완전한 고요, 별들의 숨소리",
+      "required": {
+        "emotion": ["contemplative", "dreamy"],
+        "energy": "low",
+        "tempo_feel": "slow",
+        "genre_contains": ["ambient", "space"],
+        "atmosphere_contains": ["space", "vast"]
+      },
+      "forbidden": {
+        "energy": ["high"],
+        "genre_contains": ["punk", "rock", "hip hop"]
+      }
+    }
+  },
+  "evaluation": {
+    "passing_threshold": 0.8,
+    "description": "핵심 속성 포함율 80% 이상을 통과 기준으로 설정"
+  }
+}

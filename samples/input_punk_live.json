@@ -1,0 +1,7 @@
+{
+  "input": "지하 클럽, 땀냄새, 기타 피드백이 귀를 찢는 소리, 관중의 함성과 밀착, 날 것의 에너지. 완벽하지 않아도 되는, 오히려 거칠수록 좋은 그 순간.",
+  "options": {
+    "genre": ["punk rock"],
+    "content_goal": "live_performance"
+  }
+}

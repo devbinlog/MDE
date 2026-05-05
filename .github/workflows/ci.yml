@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    name: Backend Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: python -m pytest tests/ -v --tb=short
+        env:
+          APP_ENV: test
+          DATABASE_URL: sqlite+aiosqlite:///./test.db
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+  ai-service:
+    name: AI Service Schema Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pydantic
+        run: pip install pydantic>=2.7.0
+      - name: Validate schema
+        run: python -c "from packages.ai_service.models import MusicProfile; print('Schema OK')"

@@ -1,0 +1,21 @@
+{
+  "musicProfile": {
+    "emotion": ["melancholic", "lonely", "contemplative", "nostalgic"],
+    "energy": "low",
+    "tempo_feel": "slow",
+    "genre": ["indie pop", "dream pop", "shoegaze"],
+    "instrumentation": ["electric piano", "synth pad", "soft kick", "bass", "processed vocal"],
+    "sound_direction": ["heavy reverb", "wide stereo pad", "warm compression", "dark mix"],
+    "atmosphere": ["rainy night", "foggy morning", "empty street", "intimate room"],
+    "visual_association": ["neon reflections on wet asphalt", "foggy windshield", "empty highway", "dim dashboard light"],
+    "listener_context": "새벽 혼자 드라이브",
+    "content_goal": "album_cover",
+    "summary": "빗소리와 함께 새벽 도로를 홀로 달리는 몽환적 인디팝"
+  },
+  "explanation": {
+    "music_direction": "전반적으로 헤비한 리버브가 깔린 전기 피아노와 신스 패드가 중심이 되는 구조입니다. BPM 65-75의 느린 템포로, 감정이 서서히 고이는 느낌을 주어야 합니다. 보컬은 있다면 처리된 형태로 멀리서 들리듯 배치하고, 드럼은 소프트 킥과 레이어드 스네어로 존재감을 최소화합니다.",
+    "sound_direction": "넓은 스테레오 신스 패드가 공간감을 채우고, 전기 피아노는 중앙에 따뜻하게 압축됩니다. 마스터에서 다크 믹스 EQ로 고음역을 줄여 빗소리 같은 텍스처를 만듭니다. 전체적으로 레이어가 많지 않고 공간이 많이 남아있는 미니멀한 프로덕션입니다.",
+    "visual_direction": "젖은 아스팔트에 반사되는 가로등 불빛, 흐릿한 앞유리, 멀어지는 도시 불빛이 앨범 커버 컨셉입니다. 색상 팔레트는 딥 네이비, 뮤트 그레이, 희미한 오렌지 포인트. 필름 그레인 질감의 아날로그 사진 스타일을 추천합니다.",
+    "content_usage": "새벽 감성 드라이브 플레이리스트나 야간 브이로그 배경음악으로 최적입니다. 인스타그램 릴스에서는 빗소리 ASMR과 함께 편집하면 감성적인 반응을 이끌어낼 수 있습니다. 앨범 단위로는 '도시의 새벽' 컨셉 EP에 적합합니다."
+  }
+}

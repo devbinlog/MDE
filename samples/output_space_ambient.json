@@ -1,0 +1,21 @@
+{
+  "musicProfile": {
+    "emotion": ["contemplative", "lonely", "hopeful", "dreamy"],
+    "energy": "low",
+    "tempo_feel": "slow",
+    "genre": ["ambient", "space music", "post-rock"],
+    "instrumentation": ["synth pad", "strings", "electric piano", "processed vocal"],
+    "sound_direction": ["heavy reverb", "wide stereo pad", "granular texture", "lush production", "layered harmonics"],
+    "atmosphere": ["space", "vast landscape", "weightless"],
+    "visual_association": ["star field", "nebula", "slow rotation", "light years away", "infinite void"],
+    "listener_context": "명상, 수면, 집중",
+    "content_goal": "playlist_mood",
+    "summary": "중력 없는 우주를 떠다니는 듯한 명상적 앰비언트 사운드스케이프"
+  },
+  "explanation": {
+    "music_direction": "BPM이 느끼기 어려울 정도로 느린 템포로, 한 음에서 다음 음으로 매우 천천히 전환됩니다. 특정 멜로디라인보다는 화성의 질감과 공간이 중심이 됩니다. 감정의 변화 없이 명상적인 상태를 유지하는 드론(drone) 기반 구조.",
+    "sound_direction": "극도로 긴 리버브와 딜레이로 소리가 공간을 가득 채우며 천천히 사라집니다. 그래뉼러 신스로 별빛 같은 텍스처를 레이어링하고, 스테레오 폭을 최대화해 몰입감을 만듭니다. EQ는 저음역과 고음역 모두 부드럽게 롤오프.",
+    "visual_direction": "딥 블랙 배경에 성운의 가스와 별빛이 번지는 비주얼. 색상 팔레트는 딥 퍼플, 코스믹 블루, 희미한 핑크. CGI 우주 이미지보다 망원경 실제 사진 스타일이 어울립니다.",
+    "content_usage": "수면 음악, 명상, 집중 작업용 플레이리스트에 최적입니다. 유튜브 '우주 소리' 채널이나 명상 앱 콘텐츠에 활용 가능하며, 장시간 재생을 위한 루프 구조로 제작하면 좋습니다."
+  }
+}

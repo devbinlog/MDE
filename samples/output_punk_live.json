@@ -1,0 +1,21 @@
+{
+  "musicProfile": {
+    "emotion": ["raw", "intense", "excited", "euphoric"],
+    "energy": "high",
+    "tempo_feel": "fast",
+    "genre": ["punk rock", "indie rock"],
+    "instrumentation": ["distorted guitar", "live drums", "bass", "vocal"],
+    "sound_direction": ["dry vocal", "punchy snare", "bright mix", "minimal arrangement"],
+    "atmosphere": ["underground venue", "live concert"],
+    "visual_association": ["sweaty crowd", "stage feedback sparks", "dim stage light", "fist in the air"],
+    "listener_context": "지하 클럽 라이브",
+    "content_goal": "live_performance",
+    "summary": "지하 클럽의 땀냄새와 기타 피드백, 날 것 그대로의 펑크 에너지"
+  },
+  "explanation": {
+    "music_direction": "드라이하고 압축되지 않은 보컬이 거칠게 터져나오는 라이브 느낌입니다. 기타는 피드백과 디스토션을 최대화하고, 드럼은 타이트하게 펀치감 있는 패턴으로 몰아붙입니다. BPM 160-180의 빠른 템포, 쉬는 구간 없이 직선적으로 전개되는 구조.",
+    "sound_direction": "믹스는 빠르고 밝게. 과도한 리버브나 딜레이 없이 각 악기의 날것 그대로를 살립니다. 보컬은 드라이하게 앞으로 내세우고, 스네어는 크고 선명하게 펀치감을 강조합니다. 프로덕션보다 연주의 에너지가 느껴지는 로파이 라이브 녹음 스타일.",
+    "visual_direction": "흑백 또는 고대비의 라이브 사진 스타일. 땀에 젖은 관중, 뒤틀린 기타 넥, 무대 조명의 플레어. 앨범 커버는 라이브 순간을 포착한 거친 필름 사진이 어울립니다.",
+    "content_usage": "라이브 공연 영상, 리허설 클립, 투어 다큐멘터리 배경음으로 최적입니다. 유튜브 라이브 영상에서 에너제틱한 클립과 함께 편집하면 임팩트 있습니다."
+  }
+}

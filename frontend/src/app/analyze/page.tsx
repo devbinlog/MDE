@@ -16,15 +16,25 @@ type Stage = 'input' | 'loading' | 'result'
 
 const FEATURES = [
   {
-    emoji: '🎵',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" />
+      </svg>
+    ),
     title: '뮤직 프로파일',
     desc: 'BPM, 키, 장르, 에너지 레벨, 무드 등 음악적 파라미터를 수치화합니다',
-    color: '#7c5cfc',
-    bg: 'rgba(124,92,252,0.06)',
-    border: 'rgba(124,92,252,0.15)',
+    color: '#2563eb',
+    bg: 'rgba(37,99,235,0.06)',
+    border: 'rgba(37,99,235,0.15)',
   },
   {
-    emoji: '🎯',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" />
+        <line x1="12" y1="2" x2="12" y2="5" /><line x1="12" y1="19" x2="12" y2="22" />
+        <line x1="2" y1="12" x2="5" y2="12" /><line x1="19" y1="12" x2="22" y2="12" />
+      </svg>
+    ),
     title: '방향성 가이드',
     desc: '레퍼런스 아티스트, 프로덕션 기법, 악기 편성 제안을 제공합니다',
     color: '#0ea5e9',
@@ -32,12 +42,16 @@ const FEATURES = [
     border: 'rgba(14,165,233,0.15)',
   },
   {
-    emoji: '🎨',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" />
+      </svg>
+    ),
     title: '비주얼 콘셉트',
     desc: '앨범 커버 무드, 색상 팔레트, 아트워크 방향성을 함께 생성합니다',
-    color: '#f472b6',
-    bg: 'rgba(244,114,182,0.06)',
-    border: 'rgba(244,114,182,0.15)',
+    color: '#6366f1',
+    bg: 'rgba(99,102,241,0.06)',
+    border: 'rgba(99,102,241,0.15)',
   },
 ]
 
@@ -107,7 +121,7 @@ export default function AnalyzePage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
                 <span style={{
                   fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em',
-                  textTransform: 'uppercase', color: '#7c5cfc',
+                  textTransform: 'uppercase', color: '#2563eb',
                 }}>Music Direction Engine</span>
                 {aiMode && (
                   <span style={{
@@ -184,10 +198,10 @@ export default function AnalyzePage() {
                 >
                   <div style={{
                     width: '40px', height: '40px', borderRadius: '10px',
-                    background: f.bg, display: 'flex', alignItems: 'center',
-                    justifyContent: 'center', fontSize: '20px', marginBottom: '14px',
+                    background: f.bg, color: f.color, display: 'flex', alignItems: 'center',
+                    justifyContent: 'center', marginBottom: '14px',
                   }}>
-                    {f.emoji}
+                    {f.icon}
                   </div>
                   <p style={{ fontSize: '14px', fontWeight: 700, color: '#0f0f14', marginBottom: '6px' }}>{f.title}</p>
                   <p style={{ fontSize: '13px', color: '#6b6b8a', lineHeight: 1.55 }}>{f.desc}</p>
@@ -213,7 +227,7 @@ export default function AnalyzePage() {
               ].map((s, i) => (
                 <div key={s.step} style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
                   <div style={{ flex: 1 }}>
-                    <p style={{ fontSize: '10px', fontWeight: 700, color: '#7c5cfc', letterSpacing: '0.1em', marginBottom: '4px' }}>{s.step}</p>
+                    <p style={{ fontSize: '10px', fontWeight: 700, color: '#2563eb', letterSpacing: '0.1em', marginBottom: '4px' }}>{s.step}</p>
                     <p style={{ fontSize: '13px', fontWeight: 600, color: '#0f0f14', marginBottom: '2px' }}>{s.label}</p>
                     <p style={{ fontSize: '12px', color: '#6b6b8a' }}>{s.desc}</p>
                   </div>
@@ -292,7 +306,7 @@ export default function AnalyzePage() {
               <p style={{ fontSize: '11px', fontWeight: 700, color: '#b0b0c8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '16px' }}>방향성 가이드</p>
               <MusicDirectionSummary explanation={result.explanation} />
             </div>
-            <AlbumMockup profile={result.musicProfile} />
+            <AlbumMockup profile={result.musicProfile} imageUrl={result.imageUrl} />
             <ResultActions
               result={result}
               onRegenerate={handleRegenerate}

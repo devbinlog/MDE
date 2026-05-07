@@ -23,7 +23,7 @@ export default function HistoryPage() {
           <div>
             <p style={{
               fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em',
-              textTransform: 'uppercase', color: '#7c5cfc', marginBottom: '14px',
+              textTransform: 'uppercase', color: '#2563eb', marginBottom: '14px',
             }}>History</p>
             <h1 style={{
               fontSize: '32px', fontWeight: 800, color: '#0f0f14',
@@ -38,10 +38,10 @@ export default function HistoryPage() {
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '7px',
               padding: '11px 20px', borderRadius: '8px',
-              background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+              background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
               color: '#ffffff', fontSize: '14px', fontWeight: 600,
               textDecoration: 'none', flexShrink: 0,
-              boxShadow: '0 4px 16px -2px rgba(124,92,252,0.4)',
+              boxShadow: '0 4px 16px -2px rgba(37,99,235,0.4)',
             }}
           >
             새 분석 시작

@@ -48,9 +48,9 @@ export function ExamplePromptList({ examples, onSelect, disabled }: ExamplePromp
             }}
             onMouseEnter={e => {
               if (!disabled) {
-                e.currentTarget.style.borderColor = 'rgba(124,92,252,0.4)'
-                e.currentTarget.style.color = '#7c5cfc'
-                e.currentTarget.style.background = 'rgba(124,92,252,0.04)'
+                e.currentTarget.style.borderColor = 'rgba(37,99,235,0.4)'
+                e.currentTarget.style.color = '#2563eb'
+                e.currentTarget.style.background = 'rgba(37,99,235,0.04)'
               }
             }}
             onMouseLeave={e => {

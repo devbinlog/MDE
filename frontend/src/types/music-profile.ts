@@ -46,6 +46,7 @@ export interface AnalysisResult {
   input: string
   musicProfile: MusicProfile
   explanation: DirectionExplanation
+  imageUrl?: string | null
   createdAt: string
   isMock?: boolean           // 목 모드 여부
 }

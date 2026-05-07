@@ -44,11 +44,11 @@ export function SavedHistoryList() {
         <div style={{
           width: '72px', height: '72px', margin: '0 auto 24px',
           borderRadius: '18px',
-          background: 'linear-gradient(135deg, rgba(124,92,252,0.12), rgba(244,114,182,0.12))',
-          border: '1px solid rgba(124,92,252,0.2)',
+          background: 'linear-gradient(135deg, rgba(37,99,235,0.12), rgba(244,114,182,0.12))',
+          border: '1px solid rgba(37,99,235,0.2)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7c5cfc" strokeWidth="1.5">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="1.5">
             <path d="M9 18V5l12-2v13M9 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm12-2c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z" />
           </svg>
         </div>
@@ -65,10 +65,10 @@ export function SavedHistoryList() {
           style={{
             display: 'inline-flex', alignItems: 'center', gap: '8px',
             padding: '12px 24px', borderRadius: '10px',
-            background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+            background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
             color: '#ffffff', fontSize: '14px', fontWeight: 600,
             textDecoration: 'none',
-            boxShadow: '0 6px 20px -4px rgba(124,92,252,0.45)',
+            boxShadow: '0 6px 20px -4px rgba(37,99,235,0.45)',
           }}
         >
           분석 시작하기
@@ -125,8 +125,8 @@ export function SavedHistoryList() {
             }}
             onMouseEnter={e => {
               const el = e.currentTarget
-              el.style.borderColor = 'rgba(124,92,252,0.3)'
-              el.style.boxShadow = '0 4px 20px rgba(124,92,252,0.08)'
+              el.style.borderColor = 'rgba(37,99,235,0.3)'
+              el.style.boxShadow = '0 4px 20px rgba(37,99,235,0.08)'
               el.style.transform = 'translateY(-1px)'
             }}
             onMouseLeave={e => {
@@ -139,9 +139,9 @@ export function SavedHistoryList() {
             {/* 번호 배지 */}
             <div style={{
               width: '36px', height: '36px', borderRadius: '10px',
-              background: 'rgba(124,92,252,0.08)', border: '1px solid rgba(124,92,252,0.18)',
+              background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.18)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: '13px', fontWeight: 700, color: '#7c5cfc', flexShrink: 0,
+              fontSize: '13px', fontWeight: 700, color: '#2563eb', flexShrink: 0,
             }}>
               {items.length - i}
             </div>
@@ -167,8 +167,8 @@ export function SavedHistoryList() {
                 {item.result.isMock && (
                   <span style={{
                     fontSize: '10px', fontWeight: 600, padding: '2px 8px',
-                    borderRadius: '100px', background: 'rgba(124,92,252,0.08)',
-                    color: '#7c5cfc', border: '1px solid rgba(124,92,252,0.18)',
+                    borderRadius: '100px', background: 'rgba(37,99,235,0.08)',
+                    color: '#2563eb', border: '1px solid rgba(37,99,235,0.18)',
                   }}>데모</span>
                 )}
                 <span style={{ fontSize: '12px', color: '#b0b0c8' }}>

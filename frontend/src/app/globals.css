@@ -3,13 +3,13 @@
 :root {
   --fmd-bg: #ffffff;
   --fmd-surface: #fafaf9;
-  --fmd-surface-hover: #f4f3ff;
+  --fmd-surface-hover: #eff6ff;
   --fmd-border: #e8e8f0;
   --fmd-border-hover: #d0d0e8;
   --fmd-text: #0f0f14;
   --fmd-muted: #6b6b8a;
-  --fmd-purple: #7c5cfc;
-  --fmd-purple-light: #9373fd;
+  --fmd-purple: #2563eb;
+  --fmd-purple-light: #3b82f6;
   --fmd-pink: #f472b6;
 }
 
@@ -57,7 +57,7 @@ body {
 
 /* 그라디언트 텍스트 */
 .gradient-text {
-  background: linear-gradient(135deg, var(--fmd-purple), var(--fmd-pink));
+  background: linear-gradient(135deg, var(--fmd-purple), #4f46e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -73,20 +73,20 @@ body {
 
 /* 보라 글로우 */
 .glow-purple {
-  box-shadow: 0 8px 32px rgba(124,92,252,0.28);
+  box-shadow: 0 8px 32px rgba(37,99,235,0.28);
 }
 
 /* 배경 그리드 패턴 */
 .bg-grid-pattern {
   background-image:
-    linear-gradient(rgba(124,92,252,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124,92,252,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(37,99,235,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.05) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
 /* 배경 도트 패턴 */
 .bg-dot-pattern {
-  background-image: radial-gradient(rgba(124,92,252,0.1) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(37,99,235,0.1) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
@@ -111,7 +111,7 @@ body {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0,0,0,0.08);
 }
-.feature-card--purple:hover { border-color: rgba(124,92,252,0.35); box-shadow: 0 12px 40px rgba(124,92,252,0.12); }
+.feature-card--purple:hover { border-color: rgba(37,99,235,0.35); box-shadow: 0 12px 40px rgba(37,99,235,0.12); }
 .feature-card--teal:hover   { border-color: rgba(20,184,166,0.4);   box-shadow: 0 12px 40px rgba(20,184,166,0.1); }
 .feature-card--rose:hover   { border-color: rgba(244,63,94,0.35);   box-shadow: 0 12px 40px rgba(244,63,94,0.08); }
 .feature-card--amber:hover  { border-color: rgba(245,158,11,0.4);   box-shadow: 0 12px 40px rgba(245,158,11,0.08); }

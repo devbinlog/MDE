@@ -81,7 +81,7 @@ function LoginForm() {
         <input
           type="email" value={email} onChange={e => setEmail(e.target.value)}
           required placeholder="you@example.com" style={inputStyle}
-          onFocus={e => { e.currentTarget.style.borderColor = '#7c5cfc' }}
+          onFocus={e => { e.currentTarget.style.borderColor = '#2563eb' }}
           onBlur={e => { e.currentTarget.style.borderColor = '#e8e8f0' }}
         />
       </div>
@@ -90,7 +90,7 @@ function LoginForm() {
         <input
           type="password" value={password} onChange={e => setPassword(e.target.value)}
           required placeholder="••••••••" style={inputStyle}
-          onFocus={e => { e.currentTarget.style.borderColor = '#7c5cfc' }}
+          onFocus={e => { e.currentTarget.style.borderColor = '#2563eb' }}
           onBlur={e => { e.currentTarget.style.borderColor = '#e8e8f0' }}
         />
       </div>
@@ -100,7 +100,7 @@ function LoginForm() {
         style={{
           width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
           fontSize: '14px', fontWeight: 600, cursor: loading ? 'not-allowed' : 'pointer',
-          background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+          background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
           color: '#ffffff', opacity: loading ? 0.6 : 1, transition: 'opacity 0.15s',
         }}
       >
@@ -149,7 +149,7 @@ function RegisterForm() {
         <input
           type="email" value={email} onChange={e => setEmail(e.target.value)}
           required placeholder="you@example.com" style={inputStyle}
-          onFocus={e => { e.currentTarget.style.borderColor = '#f472b6' }}
+          onFocus={e => { e.currentTarget.style.borderColor = '#6366f1' }}
           onBlur={e => { e.currentTarget.style.borderColor = '#e8e8f0' }}
         />
       </div>
@@ -160,7 +160,7 @@ function RegisterForm() {
         <input
           type="password" value={password} onChange={e => setPassword(e.target.value)}
           required minLength={6} placeholder="••••••••" style={inputStyle}
-          onFocus={e => { e.currentTarget.style.borderColor = '#f472b6' }}
+          onFocus={e => { e.currentTarget.style.borderColor = '#6366f1' }}
           onBlur={e => { e.currentTarget.style.borderColor = '#e8e8f0' }}
         />
       </div>
@@ -169,7 +169,7 @@ function RegisterForm() {
         <input
           type="password" value={confirm} onChange={e => setConfirm(e.target.value)}
           required placeholder="••••••••" style={inputStyle}
-          onFocus={e => { e.currentTarget.style.borderColor = '#f472b6' }}
+          onFocus={e => { e.currentTarget.style.borderColor = '#6366f1' }}
           onBlur={e => { e.currentTarget.style.borderColor = '#e8e8f0' }}
         />
       </div>
@@ -180,7 +180,7 @@ function RegisterForm() {
         style={{
           width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
           fontSize: '14px', fontWeight: 600, cursor: loading ? 'not-allowed' : 'pointer',
-          background: 'linear-gradient(135deg, #f472b6, #e879f9)',
+          background: 'linear-gradient(135deg, #6366f1, #818cf8)',
           color: '#ffffff', opacity: loading ? 0.6 : 1, transition: 'opacity 0.15s',
         }}
       >
@@ -199,7 +199,7 @@ export function AuthForms({ defaultTab = 'login' }: { defaultTab?: 'login' | 'si
     fontSize: '14px',
     fontWeight: tab === id ? 600 : 500,
     color: tab === id ? accent : '#6b6b8a',
-    background: tab === id ? (id === 'login' ? 'rgba(124,92,252,0.07)' : 'rgba(244,114,182,0.07)') : 'transparent',
+    background: tab === id ? (id === 'login' ? 'rgba(37,99,235,0.07)' : 'rgba(244,114,182,0.07)') : 'transparent',
     border: 'none',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -221,8 +221,8 @@ export function AuthForms({ defaultTab = 'login' }: { defaultTab?: 'login' | 'si
         }}
         className="auth-tabs-mobile"
       >
-        <button onClick={() => setTab('login')} style={tabBtn('login', '로그인', '#7c5cfc')}>로그인</button>
-        <button onClick={() => setTab('signup')} style={tabBtn('signup', '회원가입', '#f472b6')}>회원가입</button>
+        <button onClick={() => setTab('login')} style={tabBtn('login', '로그인', '#2563eb')}>로그인</button>
+        <button onClick={() => setTab('signup')} style={tabBtn('signup', '회원가입', '#6366f1')}>회원가입</button>
       </div>
 
       {/* 데스크탑: 2열 나란히 / 모바일: 탭 선택된 것만 */}
@@ -245,7 +245,7 @@ export function AuthForms({ defaultTab = 'login' }: { defaultTab?: 'login' | 'si
           }}
         >
           <div style={{ marginBottom: '20px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, color: '#7c5cfc', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 700, color: '#2563eb', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px' }}>
               Login
             </p>
             <h2 style={{ fontSize: '18px', fontWeight: 700, color: '#0f0f14', marginBottom: '4px' }}>로그인</h2>
@@ -265,7 +265,7 @@ export function AuthForms({ defaultTab = 'login' }: { defaultTab?: 'login' | 'si
           }}
         >
           <div style={{ marginBottom: '20px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, color: '#f472b6', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 700, color: '#6366f1', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '6px' }}>
               Sign up
             </p>
             <h2 style={{ fontSize: '18px', fontWeight: 700, color: '#0f0f14', marginBottom: '4px' }}>회원가입</h2>

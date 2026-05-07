@@ -6,8 +6,8 @@ const FEATURES = [
     icon: '✦',
     title: '감정 & 무드 분석',
     desc: '추상적인 감정 표현을 구체적인 음악 키워드로 변환합니다',
-    iconColor: '#7c5cfc',
-    iconBg: 'rgba(124,92,252,0.1)',
+    iconColor: '#2563eb',
+    iconBg: 'rgba(37,99,235,0.1)',
     cardClass: 'feature-card feature-card--purple',
   },
   {
@@ -41,7 +41,7 @@ const EXAMPLES = [
     input: '비 오는 밤에 혼자 듣는 감성적인 기타 음악 느낌',
     genre: 'indie rock', energy: 'low', tempo: 'slow',
     summary: '빗소리와 어우러지는 잔잔한 기타 선율로 혼자만의 감성적 밤을 그려내는 인디 팝 방향',
-    accent: '#7c5cfc', accentBg: 'rgba(124,92,252,0.08)', accentBorder: 'rgba(124,92,252,0.2)',
+    accent: '#2563eb', accentBg: 'rgba(37,99,235,0.08)', accentBorder: 'rgba(37,99,235,0.2)',
   },
   {
     input: '관중 앞에서 폭발하는 펑크 라이브 공연 에너지',
@@ -74,7 +74,7 @@ export default function HomePage() {
             transform: 'translateX(-50%)',
             width: '900px', height: '600px',
             borderRadius: '50%',
-            background: 'radial-gradient(ellipse at center, rgba(124,92,252,0.08) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.08) 0%, transparent 65%)',
             pointerEvents: 'none',
           }}
         />
@@ -84,7 +84,7 @@ export default function HomePage() {
             position: 'absolute', top: '120px', right: '-80px',
             width: '500px', height: '400px',
             borderRadius: '50%',
-            background: 'radial-gradient(ellipse at center, rgba(244,114,182,0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, rgba(99,102,241,0.07) 0%, transparent 70%)',
             pointerEvents: 'none',
           }}
         />
@@ -101,9 +101,9 @@ export default function HomePage() {
             style={{
               padding: '5px 14px 5px 10px',
               borderRadius: '100px',
-              background: 'rgba(124,92,252,0.08)',
-              border: '1px solid rgba(124,92,252,0.2)',
-              color: '#7c5cfc',
+              background: 'rgba(37,99,235,0.08)',
+              border: '1px solid rgba(37,99,235,0.2)',
+              color: '#2563eb',
               marginBottom: '28px',
               letterSpacing: '0.01em',
             }}
@@ -111,11 +111,11 @@ export default function HomePage() {
             <span
               style={{
                 width: '6px', height: '6px', borderRadius: '50%',
-                background: '#7c5cfc', flexShrink: 0,
+                background: '#2563eb', flexShrink: 0,
                 animation: 'pulse 2s cubic-bezier(0.4,0,0.6,1) infinite',
               }}
             />
-            MDE · Music Direction Engine
+            MDE Music Direction Engine
           </div>
 
           {/* 헤딩 */}
@@ -133,7 +133,7 @@ export default function HomePage() {
             <br />
             <span
               style={{
-                backgroundImage: 'linear-gradient(135deg, #7c5cfc 0%, #a78bfa 50%, #f472b6 100%)',
+                backgroundImage: 'linear-gradient(135deg, #2563eb 0%, #4f46e5 60%, #7c3aed 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -168,13 +168,13 @@ export default function HomePage() {
               <button
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '8px',
-                  background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+                  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
                   color: '#ffffff',
                   fontSize: '0.9rem', fontWeight: 600,
                   padding: '11px 22px',
                   borderRadius: '8px',
                   border: 'none', cursor: 'pointer',
-                  boxShadow: '0 6px 20px -4px rgba(124,92,252,0.45)',
+                  boxShadow: '0 6px 20px -4px rgba(37,99,235,0.45)',
                   transition: 'opacity 0.15s, transform 0.15s',
                 }}
               >
@@ -244,7 +244,7 @@ export default function HomePage() {
           <div style={{ textAlign: 'center', marginBottom: '56px' }}>
             <p
               style={{
-                fontSize: '0.7rem', fontWeight: 700, color: '#7c5cfc',
+                fontSize: '0.7rem', fontWeight: 700, color: '#2563eb',
                 letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '10px',
               }}
             >
@@ -305,7 +305,7 @@ export default function HomePage() {
           <div style={{ textAlign: 'center', marginBottom: '52px' }}>
             <p
               style={{
-                fontSize: '0.7rem', fontWeight: 700, color: '#7c5cfc',
+                fontSize: '0.7rem', fontWeight: 700, color: '#2563eb',
                 letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '10px',
               }}
             >
@@ -399,13 +399,13 @@ export default function HomePage() {
               <button
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '8px',
-                  background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+                  background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
                   color: '#ffffff',
                   fontSize: '0.9rem', fontWeight: 600,
                   padding: '11px 22px',
                   borderRadius: '8px',
                   border: 'none', cursor: 'pointer',
-                  boxShadow: '0 6px 20px -4px rgba(124,92,252,0.4)',
+                  boxShadow: '0 6px 20px -4px rgba(37,99,235,0.4)',
                 }}
               >
                 내 음악 방향 분석하기
@@ -428,9 +428,9 @@ export default function HomePage() {
               textAlign: 'center',
               position: 'relative',
               overflow: 'hidden',
-              background: 'linear-gradient(135deg, rgba(124,92,252,0.06) 0%, #ffffff 50%, rgba(244,114,182,0.05) 100%)',
-              border: '1px solid rgba(124,92,252,0.15)',
-              boxShadow: '0 0 0 1px rgba(0,0,0,0.04), 0 8px 40px rgba(124,92,252,0.08)',
+              background: 'linear-gradient(135deg, rgba(37,99,235,0.05) 0%, #ffffff 50%, rgba(99,102,241,0.04) 100%)',
+              border: '1px solid rgba(37,99,235,0.13)',
+              boxShadow: '0 0 0 1px rgba(0,0,0,0.04), 0 8px 40px rgba(37,99,235,0.07)',
             }}
           >
             {/* 배경 글로우 */}
@@ -439,7 +439,7 @@ export default function HomePage() {
               style={{
                 position: 'absolute', top: '-40px', left: '10%',
                 width: '320px', height: '320px', borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(124,92,252,0.12), transparent)',
+                background: 'radial-gradient(circle, rgba(37,99,235,0.12), transparent)',
                 filter: 'blur(60px)', pointerEvents: 'none',
               }}
             />
@@ -448,7 +448,7 @@ export default function HomePage() {
               style={{
                 position: 'absolute', bottom: '-30px', right: '10%',
                 width: '260px', height: '260px', borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(244,114,182,0.1), transparent)',
+                background: 'radial-gradient(circle, rgba(99,102,241,0.1), transparent)',
                 filter: 'blur(60px)', pointerEvents: 'none',
               }}
             />
@@ -456,7 +456,7 @@ export default function HomePage() {
             <div style={{ position: 'relative' }}>
               <p
                 style={{
-                  fontSize: '0.7rem', fontWeight: 700, color: '#7c5cfc',
+                  fontSize: '0.7rem', fontWeight: 700, color: '#2563eb',
                   letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '16px',
                 }}
               >
@@ -478,13 +478,13 @@ export default function HomePage() {
                 <button
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: '8px',
-                    background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+                    background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
                     color: '#ffffff',
                     fontSize: '0.9rem', fontWeight: 600,
                     padding: '11px 22px',
                     borderRadius: '8px',
                     border: 'none', cursor: 'pointer',
-                    boxShadow: '0 6px 20px -4px rgba(124,92,252,0.45)',
+                    boxShadow: '0 6px 20px -4px rgba(37,99,235,0.45)',
                   }}
                 >
                   무료로 시작하기

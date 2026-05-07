@@ -115,8 +115,8 @@ export function MusicIdeaInput({ onSubmit, onImageAnalyze, loading, initialValue
         <div style={{
           display: 'flex', alignItems: 'center', gap: '12px',
           padding: '10px 14px',
-          background: imageState === 'error' ? 'rgba(239,68,68,0.06)' : 'rgba(124,92,252,0.05)',
-          border: `1px solid ${imageState === 'error' ? 'rgba(239,68,68,0.2)' : 'rgba(124,92,252,0.15)'}`,
+          background: imageState === 'error' ? 'rgba(239,68,68,0.06)' : 'rgba(37,99,235,0.05)',
+          border: `1px solid ${imageState === 'error' ? 'rgba(239,68,68,0.2)' : 'rgba(37,99,235,0.15)'}`,
           borderRadius: '12px',
           marginBottom: '8px',
         }}>
@@ -124,7 +124,7 @@ export function MusicIdeaInput({ onSubmit, onImageAnalyze, loading, initialValue
           <img src={imagePreview} alt="preview" style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'cover', flexShrink: 0 }} />
           <div style={{ flex: 1, minWidth: 0 }}>
             {isAnalyzingImage && (
-              <p style={{ fontSize: 13, color: '#7c5cfc', margin: 0 }}>
+              <p style={{ fontSize: 13, color: '#2563eb', margin: 0 }}>
                 {imageState === 'reading' ? '이미지 읽는 중...' : 'Gemini Vision으로 분석 중...'}
               </p>
             )}
@@ -148,10 +148,10 @@ export function MusicIdeaInput({ onSubmit, onImageAnalyze, loading, initialValue
           background: '#ffffff',
           borderRadius: '14px',
           border: focused || value.length > 0
-            ? '1.5px solid rgba(124,92,252,0.5)'
+            ? '1.5px solid rgba(37,99,235,0.5)'
             : '1.5px solid #e8e8f0',
           boxShadow: focused || value.length > 0
-            ? '0 4px 24px -4px rgba(124,92,252,0.15)'
+            ? '0 4px 24px -4px rgba(37,99,235,0.15)'
             : '0 1px 4px rgba(0,0,0,0.04)',
           transition: 'border-color 0.2s, box-shadow 0.2s',
         }}
@@ -217,9 +217,9 @@ export function MusicIdeaInput({ onSubmit, onImageAnalyze, loading, initialValue
               style={{
                 display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
                 width: 28, height: 28, borderRadius: 7, border: '1px solid #e8e8f0',
-                background: isAnalyzingImage ? 'rgba(124,92,252,0.08)' : '#ffffff',
+                background: isAnalyzingImage ? 'rgba(37,99,235,0.08)' : '#ffffff',
                 cursor: loading || isAnalyzingImage ? 'not-allowed' : 'pointer',
-                color: isAnalyzingImage ? '#7c5cfc' : '#b0b0c8',
+                color: isAnalyzingImage ? '#2563eb' : '#b0b0c8',
                 transition: 'all 0.15s',
                 fontSize: 15,
               }}
@@ -238,7 +238,7 @@ export function MusicIdeaInput({ onSubmit, onImageAnalyze, loading, initialValue
                 padding: '8px 16px', borderRadius: '8px', border: 'none',
                 fontSize: '13px', fontWeight: 600,
                 background: isValid && !loading && !isAnalyzingImage
-                  ? 'linear-gradient(135deg, #7c5cfc, #9373fd)'
+                  ? 'linear-gradient(135deg, #2563eb, #3b82f6)'
                   : '#e8e8f0',
                 color: isValid && !loading && !isAnalyzingImage ? '#ffffff' : '#b0b0c8',
                 cursor: isValid && !loading && !isAnalyzingImage ? 'pointer' : 'not-allowed',

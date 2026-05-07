@@ -17,7 +17,7 @@ export function Footer() {
           <div
             style={{
               width: '24px', height: '24px', borderRadius: '6px',
-              background: 'linear-gradient(135deg, #7c5cfc, #f472b6)',
+              background: 'linear-gradient(135deg, #2563eb, #6366f1)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               flexShrink: 0,
             }}

@@ -41,7 +41,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const primaryStyle =
       variant === 'primary'
         ? {
-            background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+            background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
             ...style,
           }
         : secondaryStyle ?? style

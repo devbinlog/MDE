@@ -58,7 +58,7 @@ export default function ResultDetailPage() {
           onClick={() => router.push('/analyze')}
           style={{
             padding: '10px 20px', borderRadius: '10px',
-            background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+            background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
             color: '#ffffff', fontSize: '14px', fontWeight: 600,
             border: 'none', cursor: 'pointer',
           }}
@@ -117,8 +117,8 @@ export default function ResultDetailPage() {
           </div>
 
           <div style={{
-            background: 'linear-gradient(135deg, rgba(124,92,252,0.05) 0%, rgba(244,114,182,0.03) 100%)',
-            border: '1px solid rgba(124,92,252,0.12)',
+            background: 'linear-gradient(135deg, rgba(37,99,235,0.05) 0%, rgba(244,114,182,0.03) 100%)',
+            border: '1px solid rgba(37,99,235,0.12)',
             borderRadius: '14px', padding: '20px 24px',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
@@ -159,10 +159,10 @@ export default function ResultDetailPage() {
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '6px',
               padding: '10px 18px', borderRadius: '10px',
-              background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+              background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
               color: '#ffffff', fontSize: '14px', fontWeight: 600,
               border: 'none', cursor: 'pointer',
-              boxShadow: '0 4px 14px -2px rgba(124,92,252,0.4)',
+              boxShadow: '0 4px 14px -2px rgba(37,99,235,0.35)',
             }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

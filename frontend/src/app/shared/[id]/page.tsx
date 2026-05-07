@@ -55,8 +55,8 @@ export default async function SharedResultPage({ params }: PageProps) {
       <div style={{ maxWidth: '56rem', margin: '0 auto', padding: '32px 24px 64px' }}>
         {/* 입력 요약 */}
         <div style={{
-          background: 'linear-gradient(135deg, rgba(124,92,252,0.06) 0%, rgba(244,114,182,0.04) 100%)',
-          border: '1px solid rgba(124,92,252,0.15)',
+          background: 'linear-gradient(135deg, rgba(37,99,235,0.06) 0%, rgba(244,114,182,0.04) 100%)',
+          border: '1px solid rgba(37,99,235,0.15)',
           borderRadius: '16px', padding: '20px 24px', marginBottom: '32px',
         }}>
           <p style={{ fontSize: '11px', color: '#9898b0', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '8px' }}>분석 입력</p>
@@ -85,10 +85,10 @@ export default async function SharedResultPage({ params }: PageProps) {
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '8px',
                 padding: '11px 24px', borderRadius: '10px',
-                background: 'linear-gradient(135deg, #7c5cfc, #9373fd)',
+                background: 'linear-gradient(135deg, #2563eb, #3b82f6)',
                 color: '#ffffff', fontSize: '14px', fontWeight: 600,
                 textDecoration: 'none',
-                boxShadow: '0 6px 20px -4px rgba(124,92,252,0.4)',
+                boxShadow: '0 6px 20px -4px rgba(37,99,235,0.4)',
               }}
             >
               무료로 분석하기

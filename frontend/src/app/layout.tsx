@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const cookieStore = await cookies()
-  const token = cookieStore.get('fmd_session')?.value
+  const token = cookieStore.get('mde_session')?.value
   const user = token ? await verifyToken(token) : null
 
   return (

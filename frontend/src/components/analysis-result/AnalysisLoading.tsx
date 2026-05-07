@@ -32,15 +32,15 @@ export function AnalysisLoading() {
             className="animate-pulse-ring"
             style={{
               position: 'absolute', inset: 0, borderRadius: '50%',
-              background: 'rgba(124,92,252,0.12)',
+              background: 'rgba(37,99,235,0.12)',
             }}
           />
           <div
             style={{
               position: 'relative', width: '80px', height: '80px',
               borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-              background: 'linear-gradient(135deg, #7c5cfc, #f472b6)',
-              boxShadow: '0 8px 32px -4px rgba(124,92,252,0.35)',
+              background: 'linear-gradient(135deg, #2563eb, #6366f1)',
+              boxShadow: '0 8px 32px -4px rgba(37,99,235,0.35)',
             }}
           >
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8">
@@ -66,11 +66,11 @@ export function AnalysisLoading() {
               style={{
                 display: 'flex', alignItems: 'center', gap: '14px',
                 padding: '12px 18px', borderRadius: '12px',
-                background: status === 'active' ? 'rgba(124,92,252,0.06)' : '#ffffff',
+                background: status === 'active' ? 'rgba(37,99,235,0.06)' : '#ffffff',
                 border: status === 'active'
-                  ? '1px solid rgba(124,92,252,0.2)'
+                  ? '1px solid rgba(37,99,235,0.2)'
                   : '1px solid #e8e8f0',
-                boxShadow: status === 'active' ? '0 2px 12px rgba(124,92,252,0.08)' : 'none',
+                boxShadow: status === 'active' ? '0 2px 12px rgba(37,99,235,0.08)' : 'none',
                 transition: 'all 0.3s ease',
               }}
             >
@@ -88,12 +88,12 @@ export function AnalysisLoading() {
                 ) : status === 'active' ? (
                   <div style={{
                     width: '24px', height: '24px', borderRadius: '50%',
-                    border: '2px solid #7c5cfc',
+                    border: '2px solid #2563eb',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                   }}>
                     <div
                       className="animate-pulse"
-                      style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#7c5cfc' }}
+                      style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#2563eb' }}
                     />
                   </div>
                 ) : (
@@ -119,22 +119,22 @@ export function AnalysisLoading() {
       {allDone && (
         <div style={{
           marginTop: '20px', padding: '14px 18px', borderRadius: '12px',
-          background: 'rgba(124,92,252,0.05)', border: '1px solid rgba(124,92,252,0.15)',
+          background: 'rgba(37,99,235,0.05)', border: '1px solid rgba(37,99,235,0.15)',
           display: 'flex', alignItems: 'center', gap: '12px',
         }}>
           <svg
-            style={{ width: '16px', height: '16px', flexShrink: 0, animation: 'spin 1.2s linear infinite', color: '#7c5cfc' }}
+            style={{ width: '16px', height: '16px', flexShrink: 0, animation: 'spin 1.2s linear infinite', color: '#2563eb' }}
             viewBox="0 0 24 24" fill="none"
           >
             <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeOpacity="0.25" />
             <path d="M12 2a10 10 0 0110 10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
           </svg>
           <div>
-            <p style={{ fontSize: '13px', fontWeight: 600, color: '#7c5cfc', marginBottom: '2px' }}>
+            <p style={{ fontSize: '13px', fontWeight: 600, color: '#2563eb', marginBottom: '2px' }}>
               AI 응답 마무리 중...
             </p>
             <p style={{ fontSize: '11px', color: '#9898b0' }}>
-              로컬 AI 처리 시간이 걸릴 수 있습니다 ({elapsed}초)
+              AI 서버 응답 대기 중 ({elapsed}초)
             </p>
           </div>
         </div>

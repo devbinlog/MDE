@@ -15,7 +15,7 @@ from app.core.deps import get_db, get_optional_user
 from app.models.orm import User, AnalysisSession
 from app.schemas.analysis import AnalyzeRequest, AnalysisResultResponse
 from app.services.direction_service import generate_all_directions
-from app.services.gemini_service import (
+from app.services.openrouter_service import (
     GeminiRateLimitError, GeminiServiceError, describe_image
 )
 from app.services.image_service import get_image_url
@@ -87,7 +87,7 @@ async def analyze(
     request: Request,
     body: AnalyzeRequest,
     db: AsyncSession = Depends(get_db),
-    current_user: User | None = Depends(get_optional_user),
+    current_user: Optional[User] = Depends(get_optional_user),
 ):
     text = (body.input or "").strip()
     if len(text) < MIN_INPUT_LEN:
@@ -102,10 +102,10 @@ async def analyze(
     except GeminiRateLimitError:
         raise HTTPException(
             status_code=429,
-            detail="오늘의 무료 AI 분석 한도를 초과했습니다. 내일 다시 시도해주세요. (Gemini 무료: 1,500회/일)",
+            detail="AI 모델이 일시적으로 과부하 상태입니다. 잠시 후 다시 시도해주세요.",
         )
     except GeminiServiceError as e:
-        logger.error("Gemini service error: %s", e)
+        logger.error("LLM service error: %s", e)
         raise HTTPException(status_code=502, detail="AI 서비스에 일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.")
     except Exception as e:
         logger.exception("Unexpected analyze error: %s", e)
@@ -138,7 +138,7 @@ async def analyze_image(
     request: Request,
     body: ImageAnalyzeRequest,
     db: AsyncSession = Depends(get_db),
-    current_user: User | None = Depends(get_optional_user),
+    current_user: Optional[User] = Depends(get_optional_user),
 ):
     """Accept a base64 image, describe it with Gemini Vision, then run music analysis."""
     allowed_types = {"image/jpeg", "image/png", "image/webp", "image/gif"}

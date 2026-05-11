@@ -1,6 +1,7 @@
 import json
 import secrets
 import time
+from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -25,7 +26,7 @@ def _generate_share_id() -> str:
 async def create_share(
     body: ShareCreateRequest,
     db: AsyncSession = Depends(get_db),
-    current_user: User | None = Depends(get_optional_user),
+    current_user: Optional[User] = Depends(get_optional_user),
 ):
     # If session_id provided, look it up; otherwise require inline data
     if body.session_id:

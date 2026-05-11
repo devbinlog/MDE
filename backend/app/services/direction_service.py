@@ -1,9 +1,9 @@
 """3-way parallel music direction generation using asyncio.gather."""
 import asyncio
 import logging
-from typing import Any
+from typing import Any, Optional
 
-from app.services.gemini_service import call_gemini, extract_json, GeminiRateLimitError
+from app.services.openrouter_service import call_gemini, extract_json, GeminiRateLimitError
 
 logger = logging.getLogger(__name__)
 
@@ -55,7 +55,7 @@ Rules:
 - Return ONLY JSON. No other text."""
 
 
-def _build_profile_user_message(input_text: str, options: dict | None = None) -> str:
+def _build_profile_user_message(input_text: str, options: Optional[dict] = None) -> str:
     msg = input_text
     if options:
         if options.get("emotion"):
@@ -81,7 +81,7 @@ def _make_fallback_explanation(profile: dict) -> dict:
 
 async def generate_all_directions(
     input_text: str,
-    options: dict | None = None,
+    options: Optional[dict] = None,
 ) -> dict[str, Any]:
     """
     Generate MusicProfile and DirectionExplanation in parallel.

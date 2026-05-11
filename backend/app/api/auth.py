@@ -1,5 +1,6 @@
 import secrets
 from datetime import datetime, timezone
+from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -99,7 +100,7 @@ async def logout(response: Response):
 
 
 @router.get("/me", response_model=MeResponse)
-async def me(user: User | None = Depends(get_optional_user)):
+async def me(user: Optional[User] = Depends(get_optional_user)):
     if user is None:
         return MeResponse(user=None)
     return MeResponse(user=UserInfo(id=user.id, email=user.email, role=user.role))

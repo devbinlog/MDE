@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from typing import Literal
+from typing import Literal, Optional
 
 
 class RegisterRequest(BaseModel):
@@ -24,4 +24,4 @@ class UserInfo(BaseModel):
 
 
 class MeResponse(BaseModel):
-    user: UserInfo | None
+    user: Optional[UserInfo]

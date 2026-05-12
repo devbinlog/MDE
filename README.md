@@ -25,14 +25,18 @@ LLM 기반 음악 방향성 구조화 시스템
 ---
 
 ## 테스트 비디오 및 프로젝트 이미지
-비디오
+
+### 비디오
 
 1.
+<video src="https://github.com/devbinlog/MDE/releases/download/v1.0-media/1.mp4" controls width="100%"></video>
 
 2.
+<video src="https://github.com/devbinlog/MDE/releases/download/v1.0-media/2.mp4" controls width="100%"></video>
 
 ---
 
+## 프로젝트 이미지
 1. 메인 페이지
 <img width="1439" height="726" alt="MDE메인1" src="https://github.com/user-attachments/assets/2f2e23d9-7088-4e7f-b6a3-b27e8ed2257d" />
 <img width="1439" height="726" alt="MDE메인2" src="https://github.com/user-attachments/assets/72d62c1e-b0e3-4501-ba3c-b4a0ce90964b" />

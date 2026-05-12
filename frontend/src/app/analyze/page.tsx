@@ -131,7 +131,7 @@ export default function AnalyzePage() {
                     color: aiMode.mode === 'demo' ? '#d97706' : '#059669',
                     border: `1px solid ${aiMode.mode === 'demo' ? 'rgba(245,158,11,0.25)' : 'rgba(16,185,129,0.25)'}`,
                   }}>
-                    {aiMode.mode === 'demo' ? '데모 모드' : aiMode.provider === 'ollama' ? `Ollama · ${aiMode.model}` : aiMode.provider}
+                    {aiMode.mode === 'demo' ? '데모 모드' : aiMode.provider === 'ollama' ? `Ollama / ${aiMode.model}` : aiMode.provider}
                   </span>
                 )}
               </div>

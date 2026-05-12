@@ -259,7 +259,7 @@ export default function AdminPage() {
                         {s.inputText}
                       </p>
                       <p style={{ fontSize: '11px', color: '#b0b0c8', marginTop: '2px' }}>
-                        {fmtDate(s.createdAt)} {s.userId ? '· 회원' : '· 비회원'}
+                        {fmtDate(s.createdAt)} {s.userId ? '/ 회원' : '/ 비회원'}
                       </p>
                     </div>
                     {s.isMock && (

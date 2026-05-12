@@ -50,5 +50,5 @@ export function buildPollinationsUrl(profile: MusicProfile): string {
   const prompt = buildImagePrompt(profile)
   const encoded = encodeURIComponent(prompt)
   const seed = Math.floor(Math.random() * 999999)
-  return `https://image.pollinations.ai/prompt/${encoded}?width=512&height=512&nologo=true&seed=${seed}&model=flux`
+  return `https://image.pollinations.ai/prompt/${encoded}?width=512&height=512&nologo=true&seed=${seed}`
 }

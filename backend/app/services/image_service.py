@@ -64,7 +64,7 @@ def build_pollinations_url(profile: dict, width: int = 512, height: int = 512) -
     prompt = build_image_prompt(profile)
     seed = random.randint(1, 999999)
     encoded = urllib.parse.quote(prompt)
-    return f"{POLLINATIONS_BASE}/{encoded}?width={width}&height={height}&seed={seed}&model=flux"
+    return f"{POLLINATIONS_BASE}/{encoded}?width={width}&height={height}&seed={seed}&model=turbo"
 
 
 def get_image_url(profile: Optional[dict]) -> Optional[str]:
